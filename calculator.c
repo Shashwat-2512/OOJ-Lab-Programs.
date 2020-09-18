@@ -8,7 +8,7 @@ int main()
     while(t!=0)
     {
         int i;
-        printf("\nPress: 1 for Addition\n2 for Sub\n3 for Multiplication\n4 for division\n 5 to Compare\n 6 for mod\n Press -1 for exit\n");
+        printf("\nPress: 1 for Addition\n2 for Sub\n3 for Multiplication\n4 for division\n 5 to Compare\n 6 for modules\n 7 for remainder\n Press -1 for exit\n");
         scanf("%d",&i);
         if(i==1)
             printf("%d",a+b);
@@ -33,7 +33,9 @@ int main()
             }
         }
         else if(i==6)
-            printf("%d",a%b);
+            printf("%d",abs(a+b));
+        else if(i==7)
+            printf("%d",a%b)
         else if(i==-1)
         {
             printf("Thank you");
